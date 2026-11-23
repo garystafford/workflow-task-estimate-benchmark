@@ -76,3 +76,7 @@ Promptfoo runs automatically during grading and the benchmark saves its verdicts
 - `scripts/` contains the command-line runner, session audit, and reporting code. `test/` contains local regression tests.
 
 The default output directory, dependency directories, caches, and local credentials are covered by [.gitignore](.gitignore). Keep generated runs under `results/` if you share your working copy.
+
+---
+
+_The contents of this repository represent my viewpoints and not those of my past or current employers, including Amazon Web Services (AWS). All third-party libraries, modules, plugins, and SDKs are the property of their respective owners._
