@@ -1,0 +1,412 @@
+[
+  {
+    "id": "course-allowance",
+    "ticket": "EK-401",
+    "tier": "Routine",
+    "topic": "learning",
+    "question": "What annual allowance applies to my approved course?",
+    "eventDate": "2026-09-04",
+    "employee": {
+      "homeOffice": "Central",
+      "role": "office"
+    },
+    "catalog": [
+      "LEARN-B.2"
+    ],
+    "expected": {
+      "sites": [
+        "Central"
+      ],
+      "citations": [
+        "LEARN-B.2"
+      ],
+      "value": 500,
+      "unit": "USD_per_year",
+      "action": "answer"
+    }
+  },
+  {
+    "id": "headset-cycle",
+    "ticket": "EK-402",
+    "tier": "Routine",
+    "topic": "equipment",
+    "question": "How often may I replace my standard headset?",
+    "eventDate": "2026-10-10",
+    "employee": {
+      "homeOffice": "Central",
+      "role": "office"
+    },
+    "catalog": [
+      "KIT-B.3"
+    ],
+    "expected": {
+      "sites": [
+        "Central"
+      ],
+      "citations": [
+        "KIT-B.3"
+      ],
+      "value": 24,
+      "unit": "months",
+      "action": "answer"
+    }
+  },
+  {
+    "id": "claim-window",
+    "ticket": "EK-403",
+    "tier": "Routine",
+    "topic": "filing",
+    "question": "How many days after this trip ends do I have to submit my claim?",
+    "eventDate": "2026-09-02",
+    "employee": {
+      "homeOffice": "Central",
+      "role": "office"
+    },
+    "catalog": [
+      "TRIP-B.5"
+    ],
+    "expected": {
+      "sites": [
+        "Central"
+      ],
+      "citations": [
+        "TRIP-B.5"
+      ],
+      "value": 30,
+      "unit": "calendar_days",
+      "action": "answer"
+    }
+  },
+  {
+    "id": "allowance-boundary",
+    "ticket": "EK-404",
+    "tier": "Standard",
+    "topic": "learning",
+    "question": "What annual allowance applies to my approved course?",
+    "eventDate": "2026-07-01",
+    "employee": {
+      "homeOffice": "Central",
+      "role": "office"
+    },
+    "catalog": [
+      "LEARN-A.2",
+      "LEARN-C.2",
+      "LEARN-B.2"
+    ],
+    "expected": {
+      "sites": [
+        "Central"
+      ],
+      "citations": [
+        "LEARN-B.2"
+      ],
+      "value": 500,
+      "unit": "USD_per_year",
+      "action": "answer"
+    }
+  },
+  {
+    "id": "headset-draft",
+    "ticket": "EK-405",
+    "tier": "Standard",
+    "topic": "equipment",
+    "question": "How often may I replace my standard headset?",
+    "eventDate": "2026-10-13",
+    "employee": {
+      "homeOffice": "Central",
+      "role": "office"
+    },
+    "catalog": [
+      "KIT-C.3",
+      "KIT-B.3",
+      "KIT-A.3"
+    ],
+    "expected": {
+      "sites": [
+        "Central"
+      ],
+      "citations": [
+        "KIT-B.3"
+      ],
+      "value": 24,
+      "unit": "months",
+      "action": "answer"
+    }
+  },
+  {
+    "id": "historical-trip",
+    "ticket": "EK-406",
+    "tier": "Standard",
+    "topic": "filing",
+    "question": "How many days after this trip ends do I have to submit my claim?",
+    "eventDate": "2026-08-31",
+    "employee": {
+      "homeOffice": "Central",
+      "role": "office"
+    },
+    "catalog": [
+      "TRIP-B.5",
+      "TRIP-A.5"
+    ],
+    "expected": {
+      "sites": [
+        "Central"
+      ],
+      "citations": [
+        "TRIP-A.5"
+      ],
+      "value": 45,
+      "unit": "calendar_days",
+      "action": "answer"
+    }
+  },
+  {
+    "id": "west-course",
+    "ticket": "EK-407",
+    "tier": "Complex",
+    "topic": "learning",
+    "question": "What annual allowance applies to my approved course?",
+    "eventDate": "2026-09-04",
+    "employee": {
+      "homeOffice": "West",
+      "role": "office"
+    },
+    "catalog": [
+      "LEARN-E.3",
+      "LEARN-B.2",
+      "LEARN-A.2",
+      "LEARN-W.4"
+    ],
+    "expected": {
+      "sites": [
+        "West"
+      ],
+      "citations": [
+        "LEARN-B.2",
+        "LEARN-W.4"
+      ],
+      "value": 650,
+      "unit": "USD_per_year",
+      "action": "answer"
+    }
+  },
+  {
+    "id": "east-trip",
+    "ticket": "EK-408",
+    "tier": "Complex",
+    "topic": "filing",
+    "question": "How many days after this trip ends do I have to submit my claim?",
+    "eventDate": "2026-09-11",
+    "employee": {
+      "homeOffice": "East",
+      "role": "office"
+    },
+    "catalog": [
+      "TRIP-E.9",
+      "TRIP-A.5",
+      "TRIP-B.5"
+    ],
+    "expected": {
+      "sites": [
+        "East"
+      ],
+      "citations": [
+        "TRIP-B.5",
+        "TRIP-E.9"
+      ],
+      "value": 20,
+      "unit": "calendar_days",
+      "action": "answer"
+    }
+  },
+  {
+    "id": "field-headset",
+    "ticket": "EK-409",
+    "tier": "Complex",
+    "topic": "equipment",
+    "question": "How often may I replace my standard headset?",
+    "eventDate": "2026-10-12",
+    "employee": {
+      "homeOffice": "West",
+      "role": "field"
+    },
+    "catalog": [
+      "KIT-C.3",
+      "KIT-W.8",
+      "KIT-A.3",
+      "KIT-B.3"
+    ],
+    "expected": {
+      "sites": [
+        "West"
+      ],
+      "citations": [
+        "KIT-B.3",
+        "KIT-W.8"
+      ],
+      "value": 18,
+      "unit": "months",
+      "action": "answer"
+    }
+  },
+  {
+    "id": "before-transfer",
+    "ticket": "EK-410",
+    "tier": "Advanced",
+    "topic": "learning",
+    "question": "I am transferring offices. What annual allowance applies to my approved course on October 15?",
+    "eventDate": "2026-10-15",
+    "employee": {
+      "homeOffice": "West",
+      "role": "office",
+      "transfer": {
+        "origin": "West",
+        "destination": "East",
+        "signedEffectiveDate": "2026-10-16"
+      }
+    },
+    "catalog": [
+      "LEARN-S.7",
+      "LEARN-A.2",
+      "MOB.6",
+      "LEARN-W.4",
+      "LEARN-C.2",
+      "LEARN-E.3",
+      "LEARN-B.2"
+    ],
+    "expected": {
+      "sites": [
+        "West"
+      ],
+      "citations": [
+        "MOB.6",
+        "LEARN-B.2",
+        "LEARN-W.4"
+      ],
+      "value": 650,
+      "unit": "USD_per_year",
+      "action": "answer"
+    }
+  },
+  {
+    "id": "on-transfer",
+    "ticket": "EK-411",
+    "tier": "Advanced",
+    "topic": "learning",
+    "question": "I am transferring offices. What annual allowance applies to my approved course on October 15?",
+    "eventDate": "2026-10-15",
+    "employee": {
+      "homeOffice": "West",
+      "role": "office",
+      "transfer": {
+        "origin": "West",
+        "destination": "East",
+        "signedEffectiveDate": "2026-10-15"
+      }
+    },
+    "catalog": [
+      "LEARN-S.7",
+      "LEARN-A.2",
+      "MOB.6",
+      "LEARN-W.4",
+      "LEARN-C.2",
+      "LEARN-E.3",
+      "LEARN-B.2"
+    ],
+    "expected": {
+      "sites": [
+        "East"
+      ],
+      "citations": [
+        "MOB.6",
+        "LEARN-B.2",
+        "LEARN-E.3"
+      ],
+      "value": 550,
+      "unit": "USD_per_year",
+      "action": "answer"
+    }
+  },
+  {
+    "id": "unknown-transfer",
+    "ticket": "EK-412",
+    "tier": "Advanced",
+    "topic": "learning",
+    "question": "I am transferring offices. What annual allowance applies to my approved course on October 15?",
+    "eventDate": "2026-10-15",
+    "employee": {
+      "homeOffice": "West",
+      "role": "office",
+      "transfer": {
+        "origin": "West",
+        "destination": "East",
+        "signedEffectiveDate": null
+      }
+    },
+    "catalog": [
+      "LEARN-S.7",
+      "LEARN-A.2",
+      "MOB.6",
+      "LEARN-W.4",
+      "LEARN-C.2",
+      "LEARN-E.3",
+      "LEARN-B.2"
+    ],
+    "expected": {
+      "sites": [
+        "West",
+        "East"
+      ],
+      "citations": [
+        "MOB.6",
+        "LEARN-B.2",
+        "LEARN-W.4",
+        "LEARN-E.3"
+      ],
+      "value": null,
+      "unit": "none",
+      "action": "clarify"
+    }
+  },
+  {
+    "id": "same-allowance",
+    "ticket": "EK-413",
+    "tier": "Advanced",
+    "topic": "learning",
+    "question": "I am transferring offices. What annual allowance applies to my approved course on October 15?",
+    "eventDate": "2026-10-15",
+    "employee": {
+      "homeOffice": "West",
+      "role": "office",
+      "transfer": {
+        "origin": "West",
+        "destination": "South",
+        "signedEffectiveDate": null
+      }
+    },
+    "catalog": [
+      "LEARN-S.7",
+      "LEARN-A.2",
+      "MOB.6",
+      "LEARN-W.4",
+      "LEARN-C.2",
+      "LEARN-E.3",
+      "LEARN-B.2"
+    ],
+    "expected": {
+      "sites": [
+        "West",
+        "South"
+      ],
+      "citations": [
+        "MOB.6",
+        "LEARN-B.2",
+        "LEARN-W.4",
+        "LEARN-S.7"
+      ],
+      "value": 650,
+      "unit": "USD_per_year",
+      "action": "answer"
+    }
+  }
+]

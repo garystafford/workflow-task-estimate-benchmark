@@ -1,0 +1,1084 @@
+[
+  {
+    "caseId": "rail",
+    "region": "US",
+    "tripDate": "2026-10-14",
+    "policyAttached": true,
+    "packets": [
+      {
+        "revision": 1,
+        "signature": "verified",
+        "receipts": [
+          {
+            "receiptLine": "TRAIN-04",
+            "category": "rail",
+            "amountMinor": 4850,
+            "currency": "USD",
+            "paidBy": "employee",
+            "refundOf": ""
+          }
+        ]
+      }
+    ],
+    "authorization": {
+      "revision": 1,
+      "limitCents": 4850,
+      "decision": "approved"
+    },
+    "timeout": "none",
+    "oracle": {
+      "revision": 1,
+      "usdByLine": {
+        "TRAIN-04": 4850
+      },
+      "eligibleByLine": {
+        "TRAIN-04": 4850
+      },
+      "policyId": "US-26B",
+      "mealCapCents": 6000,
+      "outcome": "posted",
+      "postedCents": 4850
+    },
+    "reportId": "TE-7261",
+    "employeeId": "EMP-811",
+    "tier": "Routine"
+  },
+  {
+    "caseId": "local-transit",
+    "region": "US",
+    "tripDate": "2026-10-14",
+    "policyAttached": true,
+    "packets": [
+      {
+        "revision": 1,
+        "signature": "verified",
+        "receipts": [
+          {
+            "receiptLine": "BUS-02",
+            "category": "transit",
+            "amountMinor": 375,
+            "currency": "USD",
+            "paidBy": "employee",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "CAB-11",
+            "category": "taxi",
+            "amountMinor": 2860,
+            "currency": "USD",
+            "paidBy": "employee",
+            "refundOf": ""
+          }
+        ]
+      }
+    ],
+    "authorization": {
+      "revision": 1,
+      "limitCents": 3235,
+      "decision": "approved"
+    },
+    "timeout": "none",
+    "oracle": {
+      "revision": 1,
+      "usdByLine": {
+        "BUS-02": 375,
+        "CAB-11": 2860
+      },
+      "eligibleByLine": {
+        "BUS-02": 375,
+        "CAB-11": 2860
+      },
+      "policyId": "US-26B",
+      "mealCapCents": 6000,
+      "outcome": "posted",
+      "postedCents": 3235
+    },
+    "reportId": "TE-7262",
+    "employeeId": "EMP-812",
+    "tier": "Routine"
+  },
+  {
+    "caseId": "taxi-policy",
+    "region": "US",
+    "tripDate": "2026-09-27",
+    "policyAttached": false,
+    "packets": [
+      {
+        "revision": 1,
+        "signature": "verified",
+        "receipts": [
+          {
+            "receiptLine": "CAB-11",
+            "category": "taxi",
+            "amountMinor": 2860,
+            "currency": "USD",
+            "paidBy": "employee",
+            "refundOf": ""
+          }
+        ]
+      }
+    ],
+    "authorization": {
+      "revision": 1,
+      "limitCents": 2860,
+      "decision": "approved"
+    },
+    "timeout": "none",
+    "oracle": {
+      "revision": 1,
+      "usdByLine": {
+        "CAB-11": 2860
+      },
+      "eligibleByLine": {
+        "CAB-11": 2860
+      },
+      "policyId": "US-26A",
+      "mealCapCents": 5000,
+      "outcome": "posted",
+      "postedCents": 2860
+    },
+    "reportId": "TE-7263",
+    "employeeId": "EMP-813",
+    "tier": "Routine"
+  },
+  {
+    "caseId": "hotel-personal",
+    "region": "US",
+    "tripDate": "2026-10-14",
+    "policyAttached": true,
+    "packets": [
+      {
+        "revision": 1,
+        "signature": "verified",
+        "receipts": [
+          {
+            "receiptLine": "FOL-01",
+            "category": "lodging",
+            "amountMinor": 12800,
+            "currency": "USD",
+            "paidBy": "employee",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "FOL-02",
+            "category": "personal",
+            "amountMinor": 1850,
+            "currency": "USD",
+            "paidBy": "employee",
+            "refundOf": ""
+          }
+        ]
+      }
+    ],
+    "authorization": {
+      "revision": 1,
+      "limitCents": 12800,
+      "decision": "approved"
+    },
+    "timeout": "none",
+    "oracle": {
+      "revision": 1,
+      "usdByLine": {
+        "FOL-01": 12800,
+        "FOL-02": 1850
+      },
+      "eligibleByLine": {
+        "FOL-01": 12800,
+        "FOL-02": 0
+      },
+      "policyId": "US-26B",
+      "mealCapCents": 6000,
+      "outcome": "posted",
+      "postedCents": 12800
+    },
+    "reportId": "TE-7264",
+    "employeeId": "EMP-814",
+    "tier": "Standard"
+  },
+  {
+    "caseId": "duplicate-scan",
+    "region": "US",
+    "tripDate": "2026-10-14",
+    "policyAttached": true,
+    "packets": [
+      {
+        "revision": 1,
+        "signature": "verified",
+        "receipts": [
+          {
+            "receiptLine": "CAB-11",
+            "category": "taxi",
+            "amountMinor": 2860,
+            "currency": "USD",
+            "paidBy": "employee",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "TRAIN-04",
+            "category": "rail",
+            "amountMinor": 4850,
+            "currency": "USD",
+            "paidBy": "employee",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "CAB-11",
+            "category": "taxi",
+            "amountMinor": 2860,
+            "currency": "USD",
+            "paidBy": "employee",
+            "refundOf": ""
+          }
+        ]
+      }
+    ],
+    "authorization": {
+      "revision": 1,
+      "limitCents": 7710,
+      "decision": "approved"
+    },
+    "timeout": "none",
+    "oracle": {
+      "revision": 1,
+      "usdByLine": {
+        "CAB-11": 2860,
+        "TRAIN-04": 4850
+      },
+      "eligibleByLine": {
+        "CAB-11": 2860,
+        "TRAIN-04": 4850
+      },
+      "policyId": "US-26B",
+      "mealCapCents": 6000,
+      "outcome": "posted",
+      "postedCents": 7710
+    },
+    "reportId": "TE-7265",
+    "employeeId": "EMP-811",
+    "tier": "Standard"
+  },
+  {
+    "caseId": "meal-cap",
+    "region": "US",
+    "tripDate": "2026-10-14",
+    "policyAttached": false,
+    "packets": [
+      {
+        "revision": 1,
+        "signature": "verified",
+        "receipts": [
+          {
+            "receiptLine": "MEAL-01",
+            "category": "meal",
+            "amountMinor": 8200,
+            "currency": "USD",
+            "paidBy": "employee",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "BUS-02",
+            "category": "transit",
+            "amountMinor": 375,
+            "currency": "USD",
+            "paidBy": "employee",
+            "refundOf": ""
+          }
+        ]
+      }
+    ],
+    "authorization": {
+      "revision": 1,
+      "limitCents": 6375,
+      "decision": "approved"
+    },
+    "timeout": "none",
+    "oracle": {
+      "revision": 1,
+      "usdByLine": {
+        "MEAL-01": 8200,
+        "BUS-02": 375
+      },
+      "eligibleByLine": {
+        "MEAL-01": 6000,
+        "BUS-02": 375
+      },
+      "policyId": "US-26B",
+      "mealCapCents": 6000,
+      "outcome": "posted",
+      "postedCents": 6375
+    },
+    "reportId": "TE-7266",
+    "employeeId": "EMP-812",
+    "tier": "Standard"
+  },
+  {
+    "caseId": "fx-company",
+    "region": "EU",
+    "tripDate": "2026-10-14",
+    "policyAttached": true,
+    "packets": [
+      {
+        "revision": 1,
+        "signature": "verified",
+        "receipts": [
+          {
+            "receiptLine": "HOTEL-01",
+            "category": "lodging",
+            "amountMinor": 10001,
+            "currency": "EUR",
+            "paidBy": "employee",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "RAIL-01",
+            "category": "rail",
+            "amountMinor": 3200,
+            "currency": "EUR",
+            "paidBy": "company",
+            "refundOf": ""
+          }
+        ]
+      }
+    ],
+    "authorization": {
+      "revision": 1,
+      "limitCents": 11001,
+      "decision": "approved"
+    },
+    "timeout": "none",
+    "oracle": {
+      "revision": 1,
+      "usdByLine": {
+        "HOTEL-01": 11001,
+        "RAIL-01": 3520
+      },
+      "eligibleByLine": {
+        "HOTEL-01": 11001,
+        "RAIL-01": 0
+      },
+      "policyId": "EU-26B",
+      "mealCapCents": 7000,
+      "outcome": "posted",
+      "postedCents": 11001
+    },
+    "reportId": "TE-7267",
+    "employeeId": "EMP-813",
+    "tier": "Complex"
+  },
+  {
+    "caseId": "fx-refund",
+    "region": "EU",
+    "tripDate": "2026-10-14",
+    "policyAttached": false,
+    "packets": [
+      {
+        "revision": 1,
+        "signature": "verified",
+        "receipts": [
+          {
+            "receiptLine": "HOTEL-01",
+            "category": "lodging",
+            "amountMinor": 10001,
+            "currency": "EUR",
+            "paidBy": "employee",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "CREDIT-02",
+            "category": "credit",
+            "amountMinor": -1500,
+            "currency": "EUR",
+            "paidBy": "employee",
+            "refundOf": "HOTEL-01"
+          }
+        ]
+      }
+    ],
+    "authorization": {
+      "revision": 1,
+      "limitCents": 9351,
+      "decision": "approved"
+    },
+    "timeout": "none",
+    "oracle": {
+      "revision": 1,
+      "usdByLine": {
+        "HOTEL-01": 11001,
+        "CREDIT-02": -1650
+      },
+      "eligibleByLine": {
+        "HOTEL-01": 11001,
+        "CREDIT-02": -1650
+      },
+      "policyId": "EU-26B",
+      "mealCapCents": 7000,
+      "outcome": "posted",
+      "postedCents": 9351
+    },
+    "reportId": "TE-7268",
+    "employeeId": "EMP-814",
+    "tier": "Complex"
+  },
+  {
+    "caseId": "approval-mismatch",
+    "region": "EU",
+    "tripDate": "2026-10-14",
+    "policyAttached": false,
+    "packets": [
+      {
+        "revision": 1,
+        "signature": "verified",
+        "receipts": [
+          {
+            "receiptLine": "HOTEL-01",
+            "category": "lodging",
+            "amountMinor": 10001,
+            "currency": "EUR",
+            "paidBy": "employee",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "RAIL-01",
+            "category": "rail",
+            "amountMinor": 3200,
+            "currency": "EUR",
+            "paidBy": "company",
+            "refundOf": ""
+          }
+        ]
+      },
+      {
+        "revision": 2,
+        "signature": "verified",
+        "receipts": [
+          {
+            "receiptLine": "HOTEL-01",
+            "category": "lodging",
+            "amountMinor": 10001,
+            "currency": "EUR",
+            "paidBy": "employee",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "RAIL-01",
+            "category": "rail",
+            "amountMinor": 3200,
+            "currency": "EUR",
+            "paidBy": "company",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "CREDIT-02",
+            "category": "credit",
+            "amountMinor": -1500,
+            "currency": "EUR",
+            "paidBy": "employee",
+            "refundOf": "HOTEL-01"
+          }
+        ]
+      }
+    ],
+    "authorization": {
+      "revision": 1,
+      "limitCents": 9851,
+      "decision": "approved"
+    },
+    "timeout": "none",
+    "oracle": {
+      "revision": 2,
+      "usdByLine": {
+        "HOTEL-01": 11001,
+        "RAIL-01": 3520,
+        "CREDIT-02": -1650
+      },
+      "eligibleByLine": {
+        "HOTEL-01": 11001,
+        "RAIL-01": 0,
+        "CREDIT-02": -1650
+      },
+      "policyId": "EU-26B",
+      "mealCapCents": 7000,
+      "outcome": "hold",
+      "postedCents": 0
+    },
+    "reportId": "TE-7269",
+    "employeeId": "EMP-811",
+    "tier": "Complex"
+  },
+  {
+    "caseId": "timeout-posted",
+    "region": "EU",
+    "tripDate": "2026-10-14",
+    "policyAttached": false,
+    "packets": [
+      {
+        "revision": 1,
+        "signature": "verified",
+        "receipts": [
+          {
+            "receiptLine": "HOTEL-01",
+            "category": "lodging",
+            "amountMinor": 10001,
+            "currency": "EUR",
+            "paidBy": "employee",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "MEAL-01",
+            "category": "meal",
+            "amountMinor": 8200,
+            "currency": "USD",
+            "paidBy": "employee",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "FOL-02",
+            "category": "personal",
+            "amountMinor": 1850,
+            "currency": "USD",
+            "paidBy": "employee",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "RAIL-01",
+            "category": "rail",
+            "amountMinor": 3200,
+            "currency": "EUR",
+            "paidBy": "company",
+            "refundOf": ""
+          }
+        ]
+      },
+      {
+        "revision": 2,
+        "signature": "verified",
+        "receipts": [
+          {
+            "receiptLine": "HOTEL-01",
+            "category": "lodging",
+            "amountMinor": 10001,
+            "currency": "EUR",
+            "paidBy": "employee",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "MEAL-01",
+            "category": "meal",
+            "amountMinor": 8200,
+            "currency": "USD",
+            "paidBy": "employee",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "FOL-02",
+            "category": "personal",
+            "amountMinor": 1850,
+            "currency": "USD",
+            "paidBy": "employee",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "CREDIT-02",
+            "category": "credit",
+            "amountMinor": -1500,
+            "currency": "EUR",
+            "paidBy": "employee",
+            "refundOf": "HOTEL-01"
+          },
+          {
+            "receiptLine": "RAIL-01",
+            "category": "rail",
+            "amountMinor": 3200,
+            "currency": "EUR",
+            "paidBy": "company",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "MEAL-01",
+            "category": "meal",
+            "amountMinor": 8200,
+            "currency": "USD",
+            "paidBy": "employee",
+            "refundOf": ""
+          }
+        ]
+      },
+      {
+        "revision": 3,
+        "signature": "draft",
+        "receipts": [
+          {
+            "receiptLine": "FOL-99",
+            "category": "lodging",
+            "amountMinor": 53000,
+            "currency": "EUR",
+            "paidBy": "employee",
+            "refundOf": ""
+          }
+        ]
+      }
+    ],
+    "authorization": {
+      "revision": 2,
+      "limitCents": 16351,
+      "decision": "approved"
+    },
+    "timeout": "committed",
+    "oracle": {
+      "revision": 2,
+      "usdByLine": {
+        "HOTEL-01": 11001,
+        "MEAL-01": 8200,
+        "FOL-02": 1850,
+        "CREDIT-02": -1650,
+        "RAIL-01": 3520
+      },
+      "eligibleByLine": {
+        "HOTEL-01": 11001,
+        "MEAL-01": 7000,
+        "FOL-02": 0,
+        "CREDIT-02": -1650,
+        "RAIL-01": 0
+      },
+      "policyId": "EU-26B",
+      "mealCapCents": 7000,
+      "outcome": "posted",
+      "postedCents": 16351
+    },
+    "reportId": "TE-7270",
+    "employeeId": "EMP-812",
+    "tier": "Advanced"
+  },
+  {
+    "caseId": "timeout-missing",
+    "region": "EU",
+    "tripDate": "2026-10-14",
+    "policyAttached": false,
+    "packets": [
+      {
+        "revision": 1,
+        "signature": "verified",
+        "receipts": [
+          {
+            "receiptLine": "HOTEL-01",
+            "category": "lodging",
+            "amountMinor": 10001,
+            "currency": "EUR",
+            "paidBy": "employee",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "MEAL-01",
+            "category": "meal",
+            "amountMinor": 8200,
+            "currency": "USD",
+            "paidBy": "employee",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "FOL-02",
+            "category": "personal",
+            "amountMinor": 1850,
+            "currency": "USD",
+            "paidBy": "employee",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "RAIL-01",
+            "category": "rail",
+            "amountMinor": 3200,
+            "currency": "EUR",
+            "paidBy": "company",
+            "refundOf": ""
+          }
+        ]
+      },
+      {
+        "revision": 2,
+        "signature": "verified",
+        "receipts": [
+          {
+            "receiptLine": "HOTEL-01",
+            "category": "lodging",
+            "amountMinor": 10001,
+            "currency": "EUR",
+            "paidBy": "employee",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "MEAL-01",
+            "category": "meal",
+            "amountMinor": 8200,
+            "currency": "USD",
+            "paidBy": "employee",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "FOL-02",
+            "category": "personal",
+            "amountMinor": 1850,
+            "currency": "USD",
+            "paidBy": "employee",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "CREDIT-02",
+            "category": "credit",
+            "amountMinor": -1500,
+            "currency": "EUR",
+            "paidBy": "employee",
+            "refundOf": "HOTEL-01"
+          },
+          {
+            "receiptLine": "RAIL-01",
+            "category": "rail",
+            "amountMinor": 3200,
+            "currency": "EUR",
+            "paidBy": "company",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "MEAL-01",
+            "category": "meal",
+            "amountMinor": 8200,
+            "currency": "USD",
+            "paidBy": "employee",
+            "refundOf": ""
+          }
+        ]
+      },
+      {
+        "revision": 3,
+        "signature": "draft",
+        "receipts": [
+          {
+            "receiptLine": "FOL-99",
+            "category": "lodging",
+            "amountMinor": 53000,
+            "currency": "EUR",
+            "paidBy": "employee",
+            "refundOf": ""
+          }
+        ]
+      }
+    ],
+    "authorization": {
+      "revision": 2,
+      "limitCents": 16351,
+      "decision": "approved"
+    },
+    "timeout": "dropped",
+    "oracle": {
+      "revision": 2,
+      "usdByLine": {
+        "HOTEL-01": 11001,
+        "MEAL-01": 8200,
+        "FOL-02": 1850,
+        "CREDIT-02": -1650,
+        "RAIL-01": 3520
+      },
+      "eligibleByLine": {
+        "HOTEL-01": 11001,
+        "MEAL-01": 7000,
+        "FOL-02": 0,
+        "CREDIT-02": -1650,
+        "RAIL-01": 0
+      },
+      "policyId": "EU-26B",
+      "mealCapCents": 7000,
+      "outcome": "posted",
+      "postedCents": 16351
+    },
+    "reportId": "TE-7271",
+    "employeeId": "EMP-813",
+    "tier": "Advanced"
+  },
+  {
+    "caseId": "amendment-approved",
+    "region": "EU",
+    "tripDate": "2026-10-14",
+    "policyAttached": true,
+    "packets": [
+      {
+        "revision": 1,
+        "signature": "verified",
+        "receipts": [
+          {
+            "receiptLine": "HOTEL-01",
+            "category": "lodging",
+            "amountMinor": 10001,
+            "currency": "EUR",
+            "paidBy": "employee",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "MEAL-01",
+            "category": "meal",
+            "amountMinor": 8200,
+            "currency": "USD",
+            "paidBy": "employee",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "FOL-02",
+            "category": "personal",
+            "amountMinor": 1850,
+            "currency": "USD",
+            "paidBy": "employee",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "RAIL-01",
+            "category": "rail",
+            "amountMinor": 3200,
+            "currency": "EUR",
+            "paidBy": "company",
+            "refundOf": ""
+          }
+        ]
+      },
+      {
+        "revision": 2,
+        "signature": "verified",
+        "receipts": [
+          {
+            "receiptLine": "HOTEL-01",
+            "category": "lodging",
+            "amountMinor": 10001,
+            "currency": "EUR",
+            "paidBy": "employee",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "MEAL-01",
+            "category": "meal",
+            "amountMinor": 8200,
+            "currency": "USD",
+            "paidBy": "employee",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "FOL-02",
+            "category": "personal",
+            "amountMinor": 1850,
+            "currency": "USD",
+            "paidBy": "employee",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "CREDIT-02",
+            "category": "credit",
+            "amountMinor": -1500,
+            "currency": "EUR",
+            "paidBy": "employee",
+            "refundOf": "HOTEL-01"
+          },
+          {
+            "receiptLine": "RAIL-01",
+            "category": "rail",
+            "amountMinor": 3200,
+            "currency": "EUR",
+            "paidBy": "company",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "MEAL-01",
+            "category": "meal",
+            "amountMinor": 8200,
+            "currency": "USD",
+            "paidBy": "employee",
+            "refundOf": ""
+          }
+        ]
+      },
+      {
+        "revision": 3,
+        "signature": "draft",
+        "receipts": [
+          {
+            "receiptLine": "FOL-99",
+            "category": "lodging",
+            "amountMinor": 53000,
+            "currency": "EUR",
+            "paidBy": "employee",
+            "refundOf": ""
+          }
+        ]
+      }
+    ],
+    "authorization": {
+      "revision": 2,
+      "limitCents": 16351,
+      "decision": "approved"
+    },
+    "timeout": "none",
+    "oracle": {
+      "revision": 2,
+      "usdByLine": {
+        "HOTEL-01": 11001,
+        "MEAL-01": 8200,
+        "FOL-02": 1850,
+        "CREDIT-02": -1650,
+        "RAIL-01": 3520
+      },
+      "eligibleByLine": {
+        "HOTEL-01": 11001,
+        "MEAL-01": 7000,
+        "FOL-02": 0,
+        "CREDIT-02": -1650,
+        "RAIL-01": 0
+      },
+      "policyId": "EU-26B",
+      "mealCapCents": 7000,
+      "outcome": "posted",
+      "postedCents": 16351
+    },
+    "reportId": "TE-7272",
+    "employeeId": "EMP-814",
+    "tier": "Advanced"
+  },
+  {
+    "caseId": "amendment-held",
+    "region": "EU",
+    "tripDate": "2026-10-14",
+    "policyAttached": true,
+    "packets": [
+      {
+        "revision": 1,
+        "signature": "verified",
+        "receipts": [
+          {
+            "receiptLine": "HOTEL-01",
+            "category": "lodging",
+            "amountMinor": 10001,
+            "currency": "EUR",
+            "paidBy": "employee",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "MEAL-01",
+            "category": "meal",
+            "amountMinor": 8200,
+            "currency": "USD",
+            "paidBy": "employee",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "FOL-02",
+            "category": "personal",
+            "amountMinor": 1850,
+            "currency": "USD",
+            "paidBy": "employee",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "RAIL-01",
+            "category": "rail",
+            "amountMinor": 3200,
+            "currency": "EUR",
+            "paidBy": "company",
+            "refundOf": ""
+          }
+        ]
+      },
+      {
+        "revision": 2,
+        "signature": "verified",
+        "receipts": [
+          {
+            "receiptLine": "HOTEL-01",
+            "category": "lodging",
+            "amountMinor": 10001,
+            "currency": "EUR",
+            "paidBy": "employee",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "MEAL-01",
+            "category": "meal",
+            "amountMinor": 8200,
+            "currency": "USD",
+            "paidBy": "employee",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "FOL-02",
+            "category": "personal",
+            "amountMinor": 1850,
+            "currency": "USD",
+            "paidBy": "employee",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "CREDIT-02",
+            "category": "credit",
+            "amountMinor": -1500,
+            "currency": "EUR",
+            "paidBy": "employee",
+            "refundOf": "HOTEL-01"
+          },
+          {
+            "receiptLine": "RAIL-01",
+            "category": "rail",
+            "amountMinor": 3200,
+            "currency": "EUR",
+            "paidBy": "company",
+            "refundOf": ""
+          },
+          {
+            "receiptLine": "MEAL-01",
+            "category": "meal",
+            "amountMinor": 8200,
+            "currency": "USD",
+            "paidBy": "employee",
+            "refundOf": ""
+          }
+        ]
+      },
+      {
+        "revision": 3,
+        "signature": "draft",
+        "receipts": [
+          {
+            "receiptLine": "FOL-99",
+            "category": "lodging",
+            "amountMinor": 53000,
+            "currency": "EUR",
+            "paidBy": "employee",
+            "refundOf": ""
+          }
+        ]
+      }
+    ],
+    "authorization": {
+      "revision": 1,
+      "limitCents": 16851,
+      "decision": "approved"
+    },
+    "timeout": "none",
+    "oracle": {
+      "revision": 2,
+      "usdByLine": {
+        "HOTEL-01": 11001,
+        "MEAL-01": 8200,
+        "FOL-02": 1850,
+        "CREDIT-02": -1650,
+        "RAIL-01": 3520
+      },
+      "eligibleByLine": {
+        "HOTEL-01": 11001,
+        "MEAL-01": 7000,
+        "FOL-02": 0,
+        "CREDIT-02": -1650,
+        "RAIL-01": 0
+      },
+      "policyId": "EU-26B",
+      "mealCapCents": 7000,
+      "outcome": "hold",
+      "postedCents": 0
+    },
+    "reportId": "TE-7273",
+    "employeeId": "EMP-811",
+    "tier": "Advanced"
+  }
+]

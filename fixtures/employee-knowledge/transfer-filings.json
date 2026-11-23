@@ -1,0 +1,30 @@
+{
+  "EK-410": {
+    "fileRef": "HR-7419",
+    "records": {
+      "HR-7419": {"kind": "executed agreement", "origin": "West", "destination": "East", "effectiveDate": "2026-10-12", "nextRef": "AM-3607", "note": "The register flags a later amendment. Check its execution status before relying on this date."},
+      "AM-3607": {"kind": "executed amendment", "effectiveDate": "2026-10-16", "note": "Both parties signed the change of effective date. All other terms of the agreement stand."}
+    }
+  },
+  "EK-411": {
+    "fileRef": "HR-5832",
+    "records": {
+      "HR-5832": {"kind": "executed agreement", "origin": "West", "destination": "East", "effectiveDate": "2026-10-15", "note": "Both parties signed. The filing register shows no later amendment."}
+    }
+  },
+  "EK-412": {
+    "fileRef": "HR-6048",
+    "records": {
+      "HR-6048": {"kind": "move notice", "origin": "West", "destination": "East", "targetDate": "2026-10-12", "nextRef": "ES-2951", "note": "Scheduling requested this date. The execution envelope holds the authoritative signature record."},
+      "ES-2951": {"kind": "execution envelope", "status": "awaiting employee signature", "signedEffectiveDate": null, "note": "No executed agreement is on file."}
+    }
+  },
+  "EK-413": {
+    "fileRef": "HR-8593",
+    "records": {
+      "HR-8593": {"kind": "withdrawn request", "origin": "West", "destination": "East", "nextRef": "HR-4271", "note": "The East move was withdrawn. Use the replacement filing for the current destination."},
+      "HR-4271": {"kind": "move notice", "origin": "West", "destination": "South", "targetDate": "2026-10-18", "nextRef": "ES-7619", "note": "Proposed start only. Check the execution envelope."},
+      "ES-7619": {"kind": "execution envelope", "status": "closed without signature", "signedEffectiveDate": null, "note": "No effective date was executed."}
+    }
+  }
+}

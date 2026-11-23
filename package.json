@@ -1,0 +1,26 @@
+{
+  "devDependencies": {
+    "promptfoo": "0.125.1"
+  },
+  "name": "workflow-cost-benchmark",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
+  },
+  "description": "Five synthetic business workflows for measuring agent task cost and correctness.",
+  "scripts": {
+    "invoice": "node scripts/benchmark.mjs invoice",
+    "shipment": "node scripts/benchmark.mjs shipment",
+    "project": "node scripts/benchmark.mjs project",
+    "travel-expense": "node scripts/benchmark.mjs travel-expense",
+    "employee-knowledge": "node scripts/benchmark.mjs employee-knowledge",
+    "all": "node scripts/benchmark.mjs all",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "openai": "7.57.0",
+    "ajv": "8.20.0",
+    "csv-parse": "7.0.3"
+  }
+}

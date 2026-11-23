@@ -1,0 +1,31 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+.npmrc
+*.pem
+*.key
+
+# Dependencies, caches, and machine-specific files
+node_modules/
+.promptfoo/
+.cache/
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+*.log
+*.tgz
+
+# Benchmark outputs and in-flight receipts
+/results/
+/outputs/
+runs/
+grades/
+frozen/
+booking-access/
+settlement-access/
+*.pending
+.live-lock
+.grade-lock

@@ -1,0 +1,50 @@
+{
+  "shipmentId": "S-52",
+  "commitments": {
+    "customerId": "C-114",
+    "priorityUnits": 2,
+    "priorityDue": "2026-12-03T12:00:00-05:00",
+    "remainingUnits": 8,
+    "remainingDue": "2026-12-04T17:00:00-05:00",
+    "splitAllowed": true
+  },
+  "warehouse": {
+    "readyUnits": 10,
+    "splitReleaseAllowed": true
+  },
+  "authorizedCarriers": [
+    "North",
+    "East"
+  ],
+  "quotes": [
+    {
+      "quoteId": "Q-71",
+      "carrier": "North",
+      "units": 10,
+      "arrival": "2026-12-04T15:00:00-05:00",
+      "priceCents": 52000
+    },
+    {
+      "quoteId": "Q-72",
+      "carrier": "East",
+      "units": 10,
+      "arrival": "2026-12-03T10:00:00-05:00",
+      "priceCents": 69000
+    },
+    {
+      "quoteId": "Q-73",
+      "carrier": "East",
+      "units": 2,
+      "arrival": "2026-12-03T10:00:00-05:00",
+      "priceCents": 22000
+    },
+    {
+      "quoteId": "Q-74",
+      "carrier": "North",
+      "units": 8,
+      "arrival": "2026-12-04T15:00:00-05:00",
+      "priceCents": 34000
+    }
+  ],
+  "revisedPriorityDue": "2026-12-04T17:00:00-05:00"
+}

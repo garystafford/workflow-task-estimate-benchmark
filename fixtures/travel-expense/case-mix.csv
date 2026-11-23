@@ -1,0 +1,14 @@
+tier,case_id,monthly_reports,policy_lookup
+Routine,rail,660,0
+Routine,local-transit,300,0
+Routine,taxi-policy,140,1
+Standard,hotel-personal,340,0
+Standard,duplicate-scan,160,0
+Standard,meal-cap,100,1
+Complex,fx-company,110,0
+Complex,fx-refund,70,1
+Complex,approval-mismatch,60,1
+Advanced,timeout-posted,15,1
+Advanced,timeout-missing,15,1
+Advanced,amendment-approved,15,0
+Advanced,amendment-held,15,0
