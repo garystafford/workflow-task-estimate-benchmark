@@ -47,6 +47,32 @@ Use a workflow’s command from the table above, or run all five in sequence.
 npm run all
 ```
 
+```mermaid
+---
+config:
+  theme: neutral
+---
+flowchart TD
+    F["Case fixtures<br/>Business request and starting records"]
+
+    subgraph S["Standalone task"]
+        T["Run one task<br/>Use a verified reference handoff when needed"]
+    end
+
+    subgraph W["End-to-end workflow"]
+        direction LR
+        T1["Run task 1"] --> T2["Run task 2"] --> T3["Run task 3"]
+    end
+
+    F --> S
+    F --> W
+
+    S --> O["Capture outputs, tool actions, final records, and token usage"]
+    W --> O
+    O --> E["Evaluate tasks and workflows against expected outcomes<br/>Scripted checks and model grading"]
+    E --> P["Report pass rates and costs<br/>By task, workflow, and case tier"]
+```
+
 Each command validates the cases, runs standalone tasks and end-to-end workflows, grades the outputs, audits the hosted sessions, and writes a report. Open `results/invoice/README.md` for the invoice report. Each other workflow uses its own folder under `results/`.
 
 You can also validate a single workflow locally, for example with `npm run invoice -- --validate-only`.
