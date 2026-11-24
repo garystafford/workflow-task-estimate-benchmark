@@ -1,6 +1,6 @@
 # Workflow and task guide
 
-Each workflow starts with a business request. Follow the rows in order to see what one task must establish before the next can act. The task IDs match the `task` column in `cost-per-task.csv`. Each workflow runs at four levels of case complexity with the same model and reasoning setting. See the [README](README.md) for commands, case counts, and reports.
+Each workflow starts with a business request. Follow the rows in order to see what one task must establish before the next can act. The task IDs match the `task` column in `cost-per-task.csv`. Each workflow runs at four levels of case complexity with the same model and reasoning setting. See the [README](../README.md) for commands, case counts, and reports.
 
 ## Supplier invoice processing
 

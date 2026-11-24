@@ -2,6 +2,8 @@
 
 This benchmark covers **five business workflows**. Each workflow has **three distinct tasks**, for **15 tasks in total**. It measures model cost and pass rates for individual tasks and for each workflow from start to finish. The project includes synthetic business records, local tools, reference answers, and graders so you can run the benchmark yourself.
 
+See [GPT-6.2 Sol benchmark cost examples](docs/EXAMPLE_COSTS.md) for measured costs per task and workflow and a worked monthly estimate.
+
 ## Technologies used
 
 - **OpenAI GPT-6.2 Sol** (`gpt-6.2-sol`) runs the workflow tasks and grades their explanations, with medium reasoning effort in both roles.
@@ -11,15 +13,15 @@ This benchmark covers **five business workflows**. Each workflow has **three dis
 
 ## Workflows
 
-| Workflow                                                                  | What the three tasks do                                                                                                                             | Command                      |
-| ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
-| [Supplier invoice processing](WORKFLOWS.md#supplier-invoice-processing)   | Extract the current invoice, reconcile it against orders and receipts, then post the authorized payment and record any dispute.                     | `npm run invoice`            |
-| [Shipment recovery](WORKFLOWS.md#shipment-recovery)                       | Identify the missed shipment leg, select the applicable recovery procedure, then book a replacement or request approval.                            | `npm run shipment`           |
-| [Project feasibility](WORKFLOWS.md#project-feasibility)                   | Summarize stakeholder feedback, verify and save the finding, then assess whether the selected work package fits the staffing, budget, and deadline. | `npm run project`            |
-| [Travel expense reimbursement](WORKFLOWS.md#travel-expense-reimbursement) | Verify receipts, look up the travel policy when needed, then reimburse eligible expenses or hold the report for approval.                           | `npm run travel-expense`     |
-| [Employee knowledge assistant](WORKFLOWS.md#employee-knowledge-assistant) | Establish the employee’s circumstances, select the governing policies, then give a cited answer or ask for the missing fact.                        | `npm run employee-knowledge` |
+| Workflow                                                                      | What the three tasks do                                                                                                                             | Command                      |
+| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
+| [Supplier invoice processing](docs/WORKFLOWS.md#supplier-invoice-processing)   | Extract the current invoice, reconcile it against orders and receipts, then post the authorized payment and record any dispute.                     | `npm run invoice`            |
+| [Shipment recovery](docs/WORKFLOWS.md#shipment-recovery)                       | Identify the missed shipment leg, select the applicable recovery procedure, then book a replacement or request approval.                            | `npm run shipment`           |
+| [Project feasibility](docs/WORKFLOWS.md#project-feasibility)                   | Summarize stakeholder feedback, verify and save the finding, then assess whether the selected work package fits the staffing, budget, and deadline. | `npm run project`            |
+| [Travel expense reimbursement](docs/WORKFLOWS.md#travel-expense-reimbursement) | Verify receipts, look up the travel policy when needed, then reimburse eligible expenses or hold the report for approval.                           | `npm run travel-expense`     |
+| [Employee knowledge assistant](docs/WORKFLOWS.md#employee-knowledge-assistant) | Establish the employee’s circumstances, select the governing policies, then give a cited answer or ask for the missing fact.                        | `npm run employee-knowledge` |
 
-The [detailed workflow and task guide](WORKFLOWS.md) shows what each task receives, what it hands to the next task, and how to recognize a successful outcome. Use its task IDs to look up individual tasks in your results.
+The [detailed workflow and task guide](docs/WORKFLOWS.md) shows what each task receives, what it hands to the next task, and how to recognize a successful outcome. Use its task IDs to look up individual tasks in your results.
 
 A case is one business situation with its own records and expected outcome. Each workflow has 13 cases (three Routine, three Standard, three Complex, and four Advanced). Each case runs three times. In a standalone attempt, a task that needs an upstream input receives a verified reference handoff. In an end-to-end attempt, it receives the previous task’s actual output.
 
