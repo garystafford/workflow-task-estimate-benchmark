@@ -13,8 +13,8 @@ See [GPT-6.2 Sol benchmark cost examples](docs/EXAMPLE_COSTS.md) for measured co
 
 ## Workflows
 
-| Workflow                                                                      | What the three tasks do                                                                                                                             | Command                      |
-| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
+| Workflow                                                                       | What the three tasks do                                                                                                                             | Command                      |
+| ------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
 | [Supplier invoice processing](docs/WORKFLOWS.md#supplier-invoice-processing)   | Extract the current invoice, reconcile it against orders and receipts, then post the authorized payment and record any dispute.                     | `npm run invoice`            |
 | [Shipment recovery](docs/WORKFLOWS.md#shipment-recovery)                       | Identify the missed shipment leg, select the applicable recovery procedure, then book a replacement or request approval.                            | `npm run shipment`           |
 | [Project feasibility](docs/WORKFLOWS.md#project-feasibility)                   | Summarize stakeholder feedback, verify and save the finding, then assess whether the selected work package fits the staffing, budget, and deadline. | `npm run project`            |
@@ -47,6 +47,12 @@ Use a workflow’s command from the table above, or run all five in sequence.
 npm run all
 ```
 
+Each command validates the cases, runs standalone tasks and end-to-end workflows, grades the outputs, audits the hosted sessions, and writes a report. Open `results/invoice/README.md` for the invoice report. Each other workflow uses its own folder under `results/`.
+
+You can also validate a single workflow locally, for example with `npm run invoice -- --validate-only`.
+
+Rerunning a command reuses completed attempts and grades in its workflow folder. If a run was interrupted and left a lock or pending receipt, check the recorded process or hosted turn before retrying. For an independent repeat, move the existing workflow folder before running the command again.
+
 ```mermaid
 ---
 config:
@@ -72,12 +78,6 @@ flowchart TD
     O --> E["Evaluate tasks and workflows against expected outcomes<br/>Scripted checks and model grading"]
     E --> P["Report pass rates and costs<br/>By task, workflow, and case tier"]
 ```
-
-Each command validates the cases, runs standalone tasks and end-to-end workflows, grades the outputs, audits the hosted sessions, and writes a report. Open `results/invoice/README.md` for the invoice report. Each other workflow uses its own folder under `results/`.
-
-You can also validate a single workflow locally, for example with `npm run invoice -- --validate-only`.
-
-Rerunning a command reuses completed attempts and grades in its workflow folder. If a run was interrupted and left a lock or pending receipt, check the recorded process or hosted turn before retrying. For an independent repeat, move the existing workflow folder before running the command again.
 
 ## Read your measurements
 
